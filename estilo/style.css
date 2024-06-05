@@ -47,6 +47,7 @@ html, body {
     display: flex;
     max-width: 100%;
     box-shadow: 0 0 20px var(--mono4);
+    border-radius: 10px;
 }
 
 .fullscreen {
