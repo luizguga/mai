@@ -49,27 +49,13 @@ function imgFull(caminho, texto){
 
             img.style.width = `${altura}px`;
             img.style.width = `${largura}px`;
-        
-            window.addEventListener("resize", ()=>{
-                largura = window.innerWidth;
-                altura = Number(largura) * 9 / 16;
-                img.style.height = `${altura}px`;
-                img.style.width = `${largura}px`;
-            });
         }else if(largura >= altura){
             altura = window.innerHeight;
             largura = Number(altura) * 16 / 9;
 
             img.style.width = `${altura}px`;
             img.style.width = `${largura}px`;
-        
-            window.addEventListener("resize", ()=>{
-                altura = window.innerHeight;
-                largura = Number(altura) * 16 / 9;
-                img.style.height = `${altura}px`;
-                img.style.width = `${largura}px`;
-            });
         }
-    }, 100);
+    }, 70);
 }
 
