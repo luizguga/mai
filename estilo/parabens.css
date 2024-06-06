@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parabens {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("../imagens-p/espaco.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.saturno {
+    transform: scale(0.9);
+    width: 99%;
+    animation: saturn 14s linear infinite;
+}
+
+.astronauta1 {
+    position: absolute;
+    top: 15%;
+    left: -25%;
+    width: 25%;
+}
+
+.astronauta2 {
+    position: absolute;
+    bottom: 15%;
+    left: 100%;
+    width: 25%;
+}
+
+.astro1 {
+    animation: astro1 20s linear;
+}
+
+.astro2 {
+    animation: astro2 20s linear;
+}
+
+@keyframes saturn {
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes astro1 {
+    go {
+        left: -25%;
+    }
+    to {
+        left: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes astro2 {
+    go {
+        left: 100%;
+    }
+    to {
+        left: -25%;
+        transform: rotate(-360deg);
+    }
+}

@@ -1,5 +1,7 @@
 const corpo = document.body;
 
+const apresentacao = document.querySelector(".parabens");
+
 const imagens = document.querySelectorAll("img");
 
 for(let img of imagens){
@@ -23,13 +25,7 @@ function imgFull(caminho, texto){
     const exit = document.createElement('div');
     exit.setAttribute('class', 'exit');
     exit.innerHTML = `<span class="material-symbols-outlined">close</span>`
-    exit.addEventListener('click', ()=>{
-        div.style.display = 'none';
-        corpo.removeChild(div);
-        corpo.style.overflow = 'auto';
-    })
 
-    
     container.appendChild(img);
     container.appendChild(descricao);
     div.appendChild(container);
@@ -39,7 +35,7 @@ function imgFull(caminho, texto){
     corpo.style.overflow = "hidden";
     div.style.overflow = "scroll";
 
-    setInterval(() => {
+    const verificarTamanho = setInterval(() => {
         let altura = window.innerHeight;
         let largura = window.innerWidth;
 
@@ -57,5 +53,11 @@ function imgFull(caminho, texto){
             img.style.width = `${largura}px`;
         }
     }, 70);
-}
 
+    exit.addEventListener('click', ()=>{
+        div.style.display = 'none';
+        corpo.removeChild(div);
+        corpo.style.overflow = 'auto';
+        window.clearInterval(verificarTamanho);
+    });
+}
