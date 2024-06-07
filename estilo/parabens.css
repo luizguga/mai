@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     background-image: url("../imagens-p/espaco.jpg");
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
@@ -33,7 +33,7 @@ html, body {
 .astronauta1 {
     position: absolute;
     top: 15%;
-    left: 0;
+    left: -25%;
     width: 25%;
 }
 
@@ -45,28 +45,32 @@ html, body {
 }
 
 .astro1 {
-    animation: astro1 20s linear;
+    animation: astro1 20s linear infinite;
 }
 
 .astro2 {
-    animation: astro2 20s linear;
+    animation: astro2 20s linear infinite;
 }
 
 @keyframes saturn {
     0%{
         transform: rotate(0deg);
+        transform: scale(1);
     }
     25% {
-        transform: rotate(-2deg);
+        transform: rotate(-1deg);
+        transform: scale(0.99);
     }
     50% {
         transform: rotate(0deg);
+        transform: scale(0.98);
     }
     75% {
-        transform: rotate(2deg);
+        transform: rotate(1deg);
     }
     100%{
         transform: rotate(0deg);
+        transform: scale(1);
     }
     
 }

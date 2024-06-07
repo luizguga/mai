@@ -1,7 +1,5 @@
 const corpo = document.body;
 
-const apresentacao = document.querySelector(".parabens");
-
 const imagens = document.querySelectorAll("img");
 
 for(let img of imagens){
