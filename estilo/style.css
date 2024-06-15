@@ -23,7 +23,7 @@ html, body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-    background-color: var(--roxo-mai);
+    background-image: linear-gradient(to bottom, var(--roxo-mai), var(--sombra3));
 }
 
 .conteudo {
@@ -32,7 +32,6 @@ html, body {
     grid-template-columns: 1fr;
     min-width: 100%;
     max-width: 100%;
-    background-color: var(--roxo-mai);
 }
 
 .mural {
@@ -73,7 +72,7 @@ html, body {
     cursor: pointer;
 }
 
-.container{
+.container {
     display: flex;
     position: relative;
 }
@@ -87,6 +86,22 @@ html, body {
     padding: 6px;
     font-weight: bold;
     text-align: center;
+}
+
+a {
+    color: var(--roxo-mai);
+    background-color: var(--mono4);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+a:hover {
+    background-color: #362742;
+    color: var(--sombra1);
 }
 
 .barras::-webkit-scrollbar{
