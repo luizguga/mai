@@ -59,3 +59,17 @@ function imgFull(caminho, texto){
         window.clearInterval(verificarTamanho);
     });
 }
+
+const conteudo = document.querySelector('.conteudo');
+
+window.onload = tocarAudio();
+
+function tocarAudio() {
+    const musica = document.createElement('audio');
+    musica.src = 'musica/as-it-was.webm';
+    musica.style.display = 'none';
+    musica.setAttribute('controls', '');
+    musica.setAttribute('autoplay', '');
+    musica.setAttribute('loop', '');
+    conteudo.appendChild(musica);
+}

@@ -48,4 +48,5 @@ body {
 
 .carta > p {
     text-align: justify;
+    text-indent: 20px;
 }
