@@ -53,3 +53,14 @@ body {
     text-align: justify;
     text-indent: 20px;
 }
+
+.voltar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: var(--roxo-mai);
+    background-color: var(--mono3);
+    border: 2px dotted var(--sombra2);
+}
