@@ -31,19 +31,22 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .carta {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 1.2em;
-    padding: 50px;
+    padding: 35px;
     max-width: 480px;
-    background: url("../imagens-p/pergaminho.png") no-repeat top center;
-    background-size: 100% 100%;
+    background-color: var(--mono3);
     height: 100%;
+    color: white;
+    border-radius: 20px;
+    border: 3px dotted var(--sombra2);
 }
 
 .carta > p {
