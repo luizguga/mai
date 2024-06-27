@@ -31,7 +31,7 @@ function imgFull(caminho, texto){
     div.appendChild(exit);
 
     corpo.style.overflow = "hidden";
-    div.style.overflow = "scroll";
+    div.style.overflow = "auto";
 
     const verificarTamanho = setInterval(() => {
         let altura = window.innerHeight;
@@ -58,18 +58,4 @@ function imgFull(caminho, texto){
         corpo.style.overflow = 'auto';
         window.clearInterval(verificarTamanho);
     });
-}
-
-const conteudo = document.querySelector('.conteudo');
-
-window.onload = tocarAudio();
-
-function tocarAudio() {
-    const musica = document.createElement('audio');
-    musica.src = 'musica/as-it-was.webm';
-    musica.style.display = 'none';
-    musica.setAttribute('controls', '');
-    musica.setAttribute('autoplay', '');
-    musica.setAttribute('loop', '');
-    conteudo.appendChild(musica);
 }
