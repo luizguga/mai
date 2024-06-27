@@ -55,7 +55,7 @@ h1, h2 {
     max-width: 768px;
 }
 
-.mural img {
+.mural img, .mural video{
     display: flex;
     max-width: 100%;
     box-shadow: 0 0 20px var(--mono4);
