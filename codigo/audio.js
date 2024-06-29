@@ -9,7 +9,7 @@ function tocarAudio(caminho, local) {
     musica.src = caminho;
     musica.style.display = 'none';
     musica.setAttribute('controls', '');
-    //musica.setAttribute('autoplay', '');
+    musica.setAttribute('autoplay', '');
     musica.setAttribute('loop', '');
     local.appendChild(musica);
 }
