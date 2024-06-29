@@ -52,10 +52,12 @@ function imgFull(caminho, texto){
         }
     }, 70);
 
-    exit.addEventListener('click', ()=>{
+    const sumir = ()=> {
         div.style.display = 'none';
         corpo.removeChild(div);
         corpo.style.overflow = 'auto';
         window.clearInterval(verificarTamanho);
-    });
+    }
+
+    exit.addEventListener('click', sumir);
 }
